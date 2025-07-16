@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang=en class=order-page><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>KatVR</title><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin=anonymous><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel=stylesheet><link rel="icon shortcut" href=favicon.9cf4770d.svg type=image/x-icon><link rel=stylesheet href=layout_KateVR.09ca600f.css><body class=order-page__body>
+    <div class=order>
+      <div class=container>
+        <div class=order__top>
+          <a href=index.html class="logo order__logo">
+            <img src=logo.deb282a0.svg alt=logo class=logo__img>
+          </a>
+          <a href=order.html class=order__top-link>
+            Place Order
+          </a>
+          <a href=pay.html class="order__top-link order__top-link--active">
+            Pay
+          </a>
+          <a href=complete.html class=order__top-link>
+            Order complete
+          </a>
+          <a href=index.html class=order__close-btn></a>
+        </div>
+        <div class=order__bottom>
+          <div class="order__card-wrapper order__wpapper">
+            <img src=3.6f7ded76.png alt=bg class="order__bottom-img order__bottom-img--pay">
+            <div class="dropdown order-quantity order__quantity">
+              <h6 class=order-quantity__title>Quantity</h6>
+              <div class="dropdown__wrapper order-quantity__wrapper">
+                <button class="dropdown__button order-quantity__button">
+                  1
+                </button>
+                <ul class="dropdown__list order-quantity__list">
+                  <li class="dropdown__item order-quantity__item" data-value=1>
+                    1
+                  </li>
+                  <li class="dropdown__item order-quantity__item" data-value=2>
+                    2
+                  </li>
+                  <li class="dropdown__item order-quantity__item" data-value=3>
+                    3
+                  </li>
+                  <li class="dropdown__item order-quantity__item" data-value=4>
+                    4
+                  </li>
+                  <li class="dropdown__item order-quantity__item" data-value=5>
+                    5
+                  </li>
+                </ul>
+                <input name=quantity-input value=1 class="dropdown__input order-quantity__input">
+              </div>
+            </div>
+            <div class=order__price>
+              <h6 class=order__price-title>Price</h6>
+              <span class=order__price-item>1200$</span>
+            </div>
+          </div>
+          <form action=# onsubmit="this.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="card-form order__card-form" method=post>
+            <label class="card-form__label card-form__label--number">
+              Card Number*
+              <div class=card-form__number>
+                <input name=number maxlength=4 pattern=\d* inputmode=numeric class="card-form__input card-form__input--num" placeholder=0000 required>
+                <input name=number maxlength=4 pattern=\d* inputmode=numeric class="card-form__input card-form__input--num" placeholder=0000 required>
+                <input name=number maxlength=4 pattern=\d* inputmode=numeric class="card-form__input card-form__input--num" placeholder=0000 required>
+                <input name=number maxlength=4 pattern=\d* inputmode=numeric class="card-form__input card-form__input--num" placeholder=0000 required>
+                <a href=# class=card-form__visa></a>
+              </div>
+            </label>
+
+            <label class="card-form__label card-form__label--name">
+              Card Holder Name*
+              <input class=card-form__input id=cardHolder required>
+            </label>
+
+            <label class="card-form__label card-form__label--date">
+              Expiration Date*
+              <input class="card-form__input card-form__input--date" id=expDate maxlength=5 placeholder=MM/YY required>
+            </label>
+
+            <label class="card-form__label card-form__label--cvv">
+              CVV*
+              <input class="card-form__input card-form__input--cvv" id=cvv maxlength=4 placeholder=000 pattern=[0-9]{4} required>
+            </label>
+            <button class="button card-form__btn">
+              Purchase
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src=order.a09cf176.js></script>
+  
+
